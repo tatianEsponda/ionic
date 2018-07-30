@@ -1,0 +1,22 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>inicio</ion-title>
+    </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+    <ion-slides pager>
+        <ion-slide *ngFor="let slide of slider">
+
+            <h2 [innerHTML]="slide.title"></h2>
+            <img [src]="slide.image" />
+            <p [innerHTML]="slide.description"></p>
+            <ion-toolbar>
+                <ion-buttons end>
+                    <button ion-button color="secondary" (click)="comienzo()">Comenzar Ahora</button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

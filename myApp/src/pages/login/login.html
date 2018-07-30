@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>CentroEscucha</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="background-image">
+    <ion-card>
+        <ion-list no-line>
+            <img src="../../assets/imgs/centro.jpg" border="5">
+            <ion-item>
+                <ion-label floating>Ingresa Correo</ion-label>
+                <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Ingresa Contraseña</ion-label>
+                <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+            </ion-item>
+
+            <button ion-button full block outline color="light" (click)="login(user)">Ingresar</button>
+            <button ion-button block outline color="light" (click)="register()">Registrar</button>
+        </ion-list>
+    </ion-card>
+</ion-content>

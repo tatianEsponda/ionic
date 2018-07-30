@@ -1,0 +1,49 @@
+page-home {
+    .background-image {
+        background-image: url('../../assets/imgs/oceano.gif');
+        .sroll-content {
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+        }
+        ion-card.card {
+            box-shadow: none;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+        }
+        a,
+        p,
+        ion-card-hearder.card-header {
+            color: #fff;
+        }
+        .list>.item-block:first-child {
+            border: medium none;
+        }
+        .list>.item-block .item-inner {
+            border: medium none;
+        }
+        .item {
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border: medium none;
+            .text-input {
+                color: #fff;
+            }
+            input::-moz-placeholder {
+                color: #fff;
+            }
+            input:-moz-placeholder {
+                color: #fff;
+            }
+            *::-webkit-input-placeholder {
+                color: #fff;
+            }
+            input :-ms-input-placeholder {
+                color: #fff;
+            }
+            *:-moz-placeholder {
+                color: #fff;
+            }
+        }
+    }
+}
